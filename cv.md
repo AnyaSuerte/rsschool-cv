@@ -16,7 +16,7 @@ I approach my work creatively, I worked in the field of advertising. I have hobb
 * Git
 * React
 ## Code Example
-
+![code](code.png)
 ## Education
 * __University:__ Russian State University of Trade and Economics, specialty commerce and marketing
 * __Courses:__ [Innopolis university](https://stc.innopolis.university/)
