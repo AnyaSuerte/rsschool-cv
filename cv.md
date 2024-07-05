@@ -1,4 +1,4 @@
-# [rsschool-cv](https://AnyaSuerte.github.io/rsschool-cv/cv)
+# CV
 
 ## Anna Akimova
 
