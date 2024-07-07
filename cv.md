@@ -25,7 +25,7 @@ I approach my work creatively, I worked in the field of advertising. I have hobb
 
 ### Code Example
 
-![code](code.png)
+![code](/assets/code.png)
 
 ## Education
 
