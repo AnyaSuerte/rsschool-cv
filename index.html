@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header>
-        <div class="conteiner">
+    <header class="header">
+      <div class="conteiner">
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-            <li class="nav-item"><a href="#about-me" class="nav-link">About me</a></li>
-            <li class="nav-item"><a href="#skills" class="nav-link">My skills</a></li>
-            <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
-            <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-            <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-me" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">My skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code Example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
           </ul>
         </nav>
-        </div>
-        </header>
-      </header>
-      <main>
-        <div class="conteiner">
+      </div>
+    </header>
+    <main>
+      <div class="conteiner">
         <h1>Anna Akimova</h1>
-        <img class="header-foto" src="./my-foto.png" alt="my foto" />
+        <img class="header-foto" src="/assets/my-foto.png" alt="my foto" />
         <h2 id="contacts">Contacts</h2>
         <ul>
           <li>Location: Russia, Samara</li>
@@ -50,6 +61,21 @@
           <li>Git</li>
         </ul>
         <h2 id="code">Code Example</h2>
+        <pre>
+          <code>
+        export default (users, propertyName) => {
+          const cb = (acc, user) => {
+            if (!Object.hasOwn(acc, user[propertyName])) {
+              acc[user[propertyName]] = [];
+            }
+            acc[user[propertyName]].push(user);
+            return acc;
+          };
+          const userByGroup = users.reduce(cb, {});
+          return userByGroup;
+        };
+      </code>
+      </pre>
         <h2 id="education">Education</h2>
         <ul>
           <li>
@@ -64,16 +90,17 @@
         <h2 id="english">English</h2>
         <p>B1 - Pre-Intermediate</p>
       </div>
-      </main>
-      <footer class="futer">
-        <div class="conteiner footer__wrapper">
-        <a href="https://github.com/AnyaSuerte">my GitHub</a>
+    </main>
+    <footer class="footer">
+      <div class="conteiner footer__wrapper">
+        <a href="https://github.com/AnyaSuerte" class="footer__link"
+          >my GitHub</a
+        >
         <p>2024</p>
         <a href="https://rs.school/courses/javascript-ru"
-          ><img class="logo" src="./rs_school_js.svg" alt="RS School"
+          ><img class="logo" src="/assets/rs_school_js.svg" alt="RS School"
         /></a>
       </div>
-      </footer>
-    </div>
+    </footer>
   </body>
 </html>

@@ -12,14 +12,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: rgb(211, 223, 219);
+  background: rgb(144, 179, 167);
   line-height: 1;
 }
 .conteiner {
   max-width: 1440px;
   margin: 0 auto;
-
   padding-left: 20px;
+}
+.header {
+  background-color: #747171;
 }
 .nav-list {
   display: flex;
@@ -34,7 +36,7 @@ body {
 .nav-link {
   transition: 0.3s;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .header-foto {
   width: 230px;
@@ -45,13 +47,18 @@ body {
   height: 80px;
 }
 
-.futer {
-  background-color: #333; 
-  color: #fff; 
+.footer {
+  background-color: #747171;
+  color: #fff;
   padding: 20px;
 }
-.futer__wrapper {
+.footer__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer__link {
+  transition: 0.3s;
+  text-decoration: none;
+  color: #fff;
 }
