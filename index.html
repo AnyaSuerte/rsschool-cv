@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my CV</title>
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about-me" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">My skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#code" class="nav-link">Code Example</a>
+            </li>
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#english" class="nav-link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="conteiner">
+        <h1>Anna Akimova</h1>
+        <img class="header-foto" src="./assets/my-foto.png" alt="my foto" />
+        <h2 id="contacts">Contacts</h2>
+        <ul>
+          <li>Location: Russia, Samara</li>
+          <li>Phone: 8-927-000-00-00</li>
+          <li>Email: Anyasuerte@gmail.com</li>
+        </ul>
+        <h2 id="about-me">About me</h2>
+        <p>
+          I like to work in a team, show leadership qualities, and always learn
+          new things.
+        </p>
+        <p>
+          I approach my work creatively, I worked in the field of advertising. I
+          have hobbies such as sewing clothes and interior items, reading books,
+          dancing.
+        </p>
+        <h2 id="skills">My skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+        <h2 id="code">Code Example</h2>
+        <pre>
+          <code>
+        export default (users, propertyName) => {
+          const cb = (acc, user) => {
+            if (!Object.hasOwn(acc, user[propertyName])) {
+              acc[user[propertyName]] = [];
+            }
+            acc[user[propertyName]].push(user);
+            return acc;
+          };
+          const userByGroup = users.reduce(cb, {});
+          return userByGroup;
+        };
+      </code>
+      </pre>
+        <h2 id="education">Education</h2>
+        <ul>
+          <li>
+            University: Russian State University of Trade and Economics,
+            specialty commerce and marketing
+          </li>
+          <li>
+            Courses:
+            <a href="https://stc.innopolis.university/">Innopolis university</a>
+          </li>
+        </ul>
+        <h2 id="english">English</h2>
+        <p>B1 - Pre-Intermediate</p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="conteiner footer__wrapper">
+        <a href="https://github.com/AnyaSuerte" class="footer__link"
+          >my GitHub</a
+        >
+        <p>2024</p>
+        <a href="https://rs.school/courses/javascript-ru"
+          ><img class="logo" src="./assets/rs_school_js.svg" alt="RS School"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
